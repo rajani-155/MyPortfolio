@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .svg-wrapper {
+    margin-top: 0;
+    position: relative;
+    width: 150px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  #shape {
+    stroke-width: 6px;
+    fill: transparent;
+    stroke: #074820;
+    stroke-dasharray: 100 400;
+    stroke-dashoffset: -220;
+    transition: 1s all ease;
+  }
+  
+  .text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .text-container a {
+    color:rgb(8, 8, 8); /* Change text color to black */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    
+  }
+  
+  .svg-wrapper:hover #shape {
+    stroke-dasharray: 50 0;
+    stroke-width: 6px;
+    stroke-dashoffset: 0;
+    stroke: #06D6A0;
+  }
+  
+  .spot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  

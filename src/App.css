@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.bg-custom {
+	background-color: #ffffff; /* Customize this color as per your theme */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* Add this to your App.css or main CSS file */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+  .card::after {
+	background: inherit;
+	inset:-10px;
+	scale: 0.8;
+	filter: blur(36px) brightness(1)
+	contrast(0.85) saturate(1.4);
+	z-index: 0;
+	transition: var(--t);
+
   }
-}
+
+  .card:hover::after{
+	scale: 0.9;
+	filter: blur(36px) brightness(1)
+	contrast(1) saturate(1);
+  }
